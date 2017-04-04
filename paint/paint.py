@@ -11,7 +11,7 @@ class MyPaintWidget(Widget):
             touch.ud['line'] = Line(points=(touch.x, touch.y))
 
     def on_touch_move(self, touch):
-        touch.ud['line'].point += [touch.x, touch.y]
+        touch.ud['line'].points += [touch.x, touch.y]
 
 
 class MyPaintApp(App):
